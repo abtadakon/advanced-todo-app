@@ -1,0 +1,67 @@
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* This targets the whole page */
+body {
+    margin: 0;
+    height: 100vh; /* Takes up 100% of the viewport height */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    background-color: #f4f4f4;
+}
+
+/* This targets our invisible box */
+.container {
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: darkblue;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Puts the input on its own line */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This only applies when the body has the 'dark-mode' class */
+.dark-mode {
+    background-color: #222 !important;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+}

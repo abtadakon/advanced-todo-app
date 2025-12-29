@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 id="main-title">Hello World!</h1>
+    <input type="text" id="user-name" placeholder="Enter your name" oninput="liveUpdate()">
+    <button onclick="welcomeUser()">Click Me!</button>
+    <button onclick="resetPage()">Reset</button>
+    <p>Total Clicks: <span id="click-count">0</span></p>
+
+<p>Change Background Color:</p>
+<input type="color" id="bg-picker" oninput="changeBg()">
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
