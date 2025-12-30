@@ -65,3 +65,35 @@ input {
     color: white;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
 }
+
+ul {
+    list-style: none; /* Removes the dots */
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between; /* Puts text on left, button on right */
+    align-items: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02); /* Slight pop-out effect */
+}
+
+li button {
+    background-color: #ff4d4d;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+li button:hover {
+    background-color: #cc0000;
+}
