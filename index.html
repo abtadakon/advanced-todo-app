@@ -14,6 +14,13 @@
     <button onclick="resetPage()">Reset</button>
     <p>Total Clicks: <span id="click-count">0</span></p>
 
+    <h2>My Tasks</h2>
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="What needs to be done?">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    <ul id="todo-list"></ul>
+
 <p>Change Background Color:</p>
 <input type="color" id="bg-picker" oninput="changeBg()">
 
